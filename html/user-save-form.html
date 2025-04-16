@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Blog</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,9 +18,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link rel="stylesheet" href="/css/user-save-form.css" />
     </head>
 
-    <body class="bg-light" style="padding-top: 56px">
+    <body class="bg-white" style="padding-top: 56px">
         <nav class="navbar navbar-expand bg-white border-bottom fixed-top">
             <div
                 class="container-fluid d-flex justify-content-between align-items-center"
@@ -70,5 +70,50 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="form-box">
+            <div class="save">구직자 회원가입</div>
+
+            <div>
+                <div class="input-header">아이디</div>
+                <div class="input-box">
+                    <input type="text" placeholder="아이디를 입력해주세요" />
+                    <button class="check-box">중복확인</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-header">이메일</div>
+                <input type="text" placeholder="이메일을 입력해주세요" />
+            </div>
+
+            <div>
+                <div class="input-header">휴대전화</div>
+                <input type="text" placeholder="휴대전화를 입력해주세요" />
+            </div>
+
+            <div>
+                <div class="input-header">비밀번호</div>
+                <input type="text" placeholder="비밀번호를 입력해주세요" />
+                <div class="input-header">비밀번호확인</div>
+                <input type="text" placeholder="비밀번호를 재입력해주세요" />
+                <div class="checkpwd">
+                    영문 대소문자, 숫자, 특수문자를 3가지 이상으로 조합해 8자
+                    이상 16자 이하로 입력해주세요.
+                </div>
+            </div>
+
+            <div class="save-box">
+                <div class="save-btn">가입하기</div>
+            </div>
+        </div>
+        <footer class="bg-white py-5 border-top fixed-bottom">
+            <div class="container text-center" style="max-width: 60%">
+                <h4>Copyright 2025. WWY All rights reserved.</h4>
+                <h5>📧 a32176740@gmail.com</h5>
+                <div>그린컴퓨터아카데미 부산</div>
+                <div>Made By KDTC3-G3</div>
+            </div>
+        </footer>
     </body>
 </html>

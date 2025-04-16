@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
-        <title>Blog</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>로그인</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,20 +18,19 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link rel="stylesheet" href="/css/login.css" />
     </head>
-
-    <body class="bg-light" style="padding-top: 56px">
+    <body class="bg-white" style="padding-top: 56px">
         <nav class="navbar navbar-expand bg-white border-bottom fixed-top">
             <div
-                class="container-fluid d-flex justify-content-between align-items-center"
+                class="container d-flex justify-content-between align-items-center"
                 style="max-width: 50%"
             >
-                <!-- Left: 로고 + 메뉴 나란히 정렬 -->
+                <!-- Left: 로고 + 메뉴 -->
                 <div class="d-flex align-items-center gap-4">
                     <a class="navbar-brand text-primary fw-bold" href="#"
                         >WWY</a
                     >
-
                     <ul class="navbar-nav flex-row gap-3">
                         <li class="nav-item">
                             <a class="nav-link text-dark fw-semibold" href="#"
@@ -52,7 +50,6 @@
                     </ul>
                 </div>
 
-                <!-- Right: 로그인 버튼 -->
                 <ul class="navbar-nav d-flex flex-row gap-2">
                     <li class="nav-item">
                         <a class="btn btn-outline-primary btn-sm" href="#"
@@ -70,5 +67,49 @@
                 </ul>
             </div>
         </nav>
+        <div class="login-container">
+            <h1>쉽게 가입하고<br />간편하게 로그인하세요.</h1>
+            <p>일하는 사람들의 모든 가능성, 원티드</p>
+
+            <input
+                class="input-box"
+                type="email"
+                placeholder="이메일을 입력해주세요."
+            />
+            <input
+                class="input-box"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+            />
+
+            <div class="options">
+                <label><input type="checkbox" /> 로그인 유지</label>
+                <div class="radio-group">
+                    <label
+                        ><input type="radio" name="type" checked />
+                        구직자</label
+                    >
+                    <label><input type="radio" name="type" /> 기업</label>
+                </div>
+            </div>
+
+            <button class="submit-btn" disabled>이메일로 계속하기</button>
+
+            <div class="links">
+                <a href="#">회원가입</a>
+                <div>
+                    <a href="#">계정 찾기</a> |
+                    <a href="#">비밀번호 재설정</a>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-white py-5 border-top fixed-bottom">
+            <div class="container text-center" style="max-width: 60%">
+                <h4>Copyright 2025. WWY All rights reserved.</h4>
+                <h5>📧 a32176740@gmail.com</h5>
+                <div>그린컴퓨터아카데미 부산</div>
+                <div>Made By KDTC3-G3</div>
+            </div>
+        </footer>
     </body>
 </html>
