@@ -128,54 +128,91 @@
                 <div class="flex-fill" style="max-width: 65%">
                     <div class="bg-white border rounded p-4">
                         <div class="d-flex justify-content-between">
-                            <h4 class="fw-bold">이력서 상세보기</h4>
-                            <div class="d-flex">
-                                <button
-                                    class="btn btn-warning fw-semibold ms-3"
-                                >
-                                    수정
-                                </button>
-                                <button class="btn btn-danger fw-semibold ms-3">
-                                    삭제
-                                </button>
-                            </div>
+                            <h4 class="fw-bold">지원 현황</h4>
                         </div>
                         <br />
-                        <!-- 이력서 내용 -->
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">경력</h5>
-                            <div class="ps-4">신입</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">학력</h5>
-                            <div class="ps-4">대졸</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">기술스택</h5>
-                            <div class="ps-4">Java, HTML, JavaScript</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">수상/자격증</h5>
-                            <div class="ps-4">없음</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">대외활동</h5>
-                            <div class="ps-4">없음</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">외국어</h5>
-                            <div class="ps-4">없음</div>
-                        </div>
-                        <div class="container mb-5">
-                            <h5 class="fw-semibold">자기소개서</h5>
-                            <textarea
-                                class="form-control"
-                                rows="5"
-                                name="content"
-                            >
-test</textarea
-                            >
-                        </div>
+                        <!-- 지원 이력서 리스트 -->
+                        <table class="table table-hover">
+                            <thead class="text-center">
+                                <tr>
+                                    <th>번호</th>
+                                    <th>채용 공고명</th>
+                                    <th>이름</th>
+                                    <th>지원포지션</th>
+                                    <th>작성시간</th>
+                                    <th>진행상태</th>
+                                    <th>상태변경</th>
+                                </tr>
+                            </thead>
+                            <tbody thead class="text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <a href="#">프론트엔드개발자 모집</a>
+                                    </td>
+                                    <td>김철수</td>
+                                    <td>프론트엔드 개발자</td>
+                                    <td>2025. 03. 11</td>
+                                    <td>대기</td>
+                                    <td>
+                                        <select
+                                            class="form-select form-select-sm"
+                                        >
+                                            <option value="대기">대기</option>
+                                            <option value="진행 중">
+                                                진행 중
+                                            </option>
+                                            <option value="완료">완료</option>
+                                            <option value="반려">반려</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <a href="#">웹 풀스택 개발자 모집</a>
+                                    </td>
+                                    <td>김영희</td>
+                                    <td>웹 풀스택 개발자</td>
+                                    <td>2025. 04. 01</td>
+                                    <td>대기</td>
+                                    <td>
+                                        <select
+                                            class="form-select form-select-sm"
+                                        >
+                                            <option value="대기">대기</option>
+                                            <option value="진행 중">
+                                                진행 중
+                                            </option>
+                                            <option value="완료">완료</option>
+                                            <option value="반려">반려</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#">백엔드 개발자 모집</a></td>
+                                    <td>Steve</td>
+                                    <td>Backend Developer</td>
+                                    <td>2025. 04. 11</td>
+                                    <td>반려</td>
+                                    <td>
+                                        <select
+                                            class="form-select form-select-sm"
+                                        >
+                                            <option value="대기">대기</option>
+                                            <option value="진행 중">
+                                                진행 중
+                                            </option>
+                                            <option value="완료">완료</option>
+                                            <option value="반려" selected>
+                                                반려
+                                            </option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
