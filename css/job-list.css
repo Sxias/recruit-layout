@@ -22,15 +22,21 @@ body {
 
 .container {
     max-width: 60%;
-    gap: 46px;
 }
 
-.card-wrap {
-    gap: calc(2% / 3);
+/* .filter-wrap */
+.checkbox-area {
+    width: 100%;
+    padding: 40px 200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
 }
+
+/* list */
 
 .card-1 {
-    width: 24.5%;
+    width: 25%;
 }
 
 .recommend-img {
@@ -55,14 +61,8 @@ body {
     color: #555;
 }
 
-.card-wrap2 {
-    gap: calc(1% / 2);
-}
-
-.card-2 {
-    width: 33%;
-}
-
-.cont-wrap {
-    color: #fff;
+/* .pagging */
+.pagging {
+    width: 100%;
+    padding: 56px 0;
 }

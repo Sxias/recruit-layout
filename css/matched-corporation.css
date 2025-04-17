@@ -1,13 +1,16 @@
+@import url("font.css");
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: "Pretendard Variable"; */
     background: #f9f9f9;
     margin: 0;
-    padding: 20px;
+    padding: 56px;
 }
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .card {
@@ -15,13 +18,22 @@ body {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 56px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
-    font-size: 18px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .callout-box {
@@ -29,13 +41,10 @@ body {
     padding: 16px;
     border-radius: 8px;
     margin: 20px 0;
+    margin-left: 56px;
+    margin-right: 56px;
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    color: #666;
     margin-bottom: 10px;
 }
 
@@ -48,54 +57,6 @@ body {
     margin-bottom: 10px;
 }
 
-.tagfont {
-    color: #666;
-    font-size: 12px;
-}
-
-.profile-box {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.profile-info {
-    flex: 1;
-}
-
-.profile-button {
-    background: #007bff;
-    color: white;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.toggle {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    background: #007bff;
-    border-radius: 10px;
-    position: relative;
-}
-
-.toggle::after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-}
-
 .recommend-list {
     justify-content: center;
     display: grid;
@@ -103,14 +64,12 @@ body {
 }
 
 .recommend-card {
-    width: 1000px;
     display: grid;
-    grid-template-columns: 6fr 6fr 6fr;
-    gap: 50px;
-    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background: white;
+    padding: 20px;
+    gap: 40px;
     overflow: hidden;
-    padding: 40px;
 }
 
 .recommend-card-box {
@@ -121,10 +80,19 @@ body {
     padding: 5px;
 }
 
-.recommend-card-box img {
-    width: 100px;
-    height: 130px;
-    border-radius: 5px;
+.recommend-card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #aaa;
+    font-size: 36px;
 }
 
 .recommend-card-box-content {
@@ -134,13 +102,14 @@ body {
 
 .btn-detail {
     display: inline-block;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 6px 12px;
     background: #000;
     color: white;
     text-decoration: none;
     border-radius: 10px;
+}
+
+.btn-detail:hover {
+    background-color: #333;
 }

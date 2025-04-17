@@ -1,3 +1,5 @@
+@import url("font.css");
+
 * {
     box-sizing: border-box;
 }
@@ -9,18 +11,20 @@ body {
 }
 
 body {
+    /* font-family: "Noto Sans KR", sans-serif; */
     /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 
 .form-box {
-    width: 400px;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+
+    width: 400px;
 }
 
 .save {
